@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
-const SearchBar = () => {
+const SearchBar = ({ searchTermSubmit }) => {
 	const [term, setTerm] = useState("");
 
 	const onSubmit = (e) => {
 		e.preventDefault();
+
+		searchTermSubmit(term);
 	};
 
 	return (
