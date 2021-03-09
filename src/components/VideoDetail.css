@@ -1,0 +1,28 @@
+.video-detail-wrapper {
+  border:2px solid rgba(8, 8, 14, 0.283);
+  /* margin:0 auto;
+  padding-top: 36.25%;
+  width:100%;
+  overflow: hidden; */
+}
+
+.iframe-wrapper{
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 25px;
+height:0px;
+}
+
+.iframe-wrapper iframe{
+  position: absolute;
+  left:0;
+  top:0;
+  height: 100%;
+  width:100%;
+  display: block;
+  border:none;
+}
+
+.video-detail-content {
+  padding:1rem;
+}
