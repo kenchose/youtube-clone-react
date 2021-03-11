@@ -8,15 +8,15 @@ const VideoDetail = ({ video }) => {
 	} else {
 		const videoSrc = `https://youtube.com/embed/${video.id.videoId}`;
 		return (
-			<div className="video-detail-wrapper">
-				<div className="iframe-wrapper">
+			<div className="video-detail">
+				<div className="iframe">
 					<iframe
 						title="video player"
 						src={videoSrc}
 						allowFullScreen="allowfullscreen"></iframe>
 				</div>
-				<div className="video-detail-content">
-					<h1 dangerouslySetInnerHTML={{ __html: video.snippet.title }}></h1>
+				<div className="video-detail__content">
+					<h2 dangerouslySetInnerHTML={{ __html: video.snippet.title }}></h2>
 					<p>{video.snippet.description}</p>
 				</div>
 			</div>

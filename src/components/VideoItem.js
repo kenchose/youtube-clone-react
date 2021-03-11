@@ -4,16 +4,15 @@ import "./VideoItem.css";
 
 const VideoItem = ({ video, onVideoSelect }) => {
 	return (
-		<div className="video-item-wrapper" onClick={() => onVideoSelect(video)}>
-			<div className="video-img">
+		<div className="video-item" onClick={() => onVideoSelect(video)}>
+			<div className="video-item__img">
 				<img
-					className="video-img"
 					src={video.snippet.thumbnails.medium.url}
 					alt={video.snippet.description}
 				/>
 			</div>
-			<div className="video-item-content">
-				<h1 dangerouslySetInnerHTML={{ __html: video.snippet.title }}></h1>
+			<div className="video-item__content">
+				<h2 dangerouslySetInnerHTML={{ __html: video.snippet.title }}></h2>
 			</div>
 		</div>
 	);

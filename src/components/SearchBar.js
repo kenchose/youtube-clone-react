@@ -13,16 +13,16 @@ const SearchBar = ({ searchTermSubmit }) => {
 	};
 
 	return (
-		<div className="search-wrapper">
+		<div className="search">
 			<form className="form" onSubmit={onSubmit}>
-				<div className="search-bar">
+				<div className="form__search-bar">
 					<input
 						type="text"
 						value={term}
 						placeholder="Search"
 						onChange={(e) => setTerm(e.target.value)}
 					/>
-					<FaSearch className="search-icon" />
+					<FaSearch className="form__search-icon" onClick={onSubmit} />
 				</div>
 			</form>
 		</div>

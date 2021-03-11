@@ -7,17 +7,17 @@
   margin: 5px 0px;
 } */
 
-.video-item-wrapper{
+.video-item{
   display:flex;
   cursor: pointer;
   padding:1rem 0px;
   border-top:1px solid black;
 }
 
-.video-item-wrapper:first-child{
+.video-item:first-child{
   border-top:none;
 }
 
-.video-item-content {
-  padding-left:10px;
+.video-item__content {
+  padding-left:1rem;
 }
