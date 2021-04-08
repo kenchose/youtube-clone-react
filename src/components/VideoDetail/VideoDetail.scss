@@ -1,9 +1,9 @@
+@import "../../sass/base/base";
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/typography";
+
 .video-detail {
   border:2px solid rgba(8, 8, 14, 0.283);
-  /* margin:0 auto;
-  padding-top: 36.25%;
-  width:100%;
-  overflow: hidden; */
 }
 
 .iframe{
@@ -26,4 +26,7 @@ height:0px;
 .video-detail__content {
   padding:1rem;
   font-size: 1.6rem;
+  p{
+    font-size:1.4rem;
+  }
 }

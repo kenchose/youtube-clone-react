@@ -1,0 +1,70 @@
+// @import "../../sass/base/base";
+@import "../../sass/abstracts/variables";
+@import "../../sass/base/typography";
+
+/* .video-item {
+\  align-items: center;
+  border-top:1px solid black;
+  padding: 15px 0px;
+  margin: 5px 0px;
+} */
+
+// .video-item{
+//   display: flex;
+//   cursor: pointer;
+//   &:not(:first-child){
+//     padding-top:1rem;
+//   }
+//   &:not(:last-child){
+//     border-bottom:1px solid black;
+//   }
+//   padding-bottom:1rem;
+// }
+
+// .video-item__content{
+//   font-size:0.5rem;
+// }
+
+// .video-item__content {
+//   padding-left:1rem;
+// }
+
+// .video-item__img{
+//   display: table-cell;
+//   vertical-align: middle;
+//   width: 30%;
+//   padding-right: 1em;
+  
+//   img {
+//   width: 50%;
+//   }
+// }
+
+.video-item{
+  display: flex;
+  cursor: pointer;
+  &:not(:first-child){
+    padding-top:1rem;
+  }
+  &:not(:last-child){
+    border-bottom:1px solid black;
+  }
+  padding-bottom:1rem;
+
+  li {
+    list-style: none;
+    display: flex;
+  }
+}
+
+.video-item__content {
+  // padding-left:1rem;
+  font-size: 0.8rem;
+  width:100%;
+}
+
+.video-item__img{  
+  img {
+    max-width: 95%;
+  }
+}
